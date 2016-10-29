@@ -25,6 +25,7 @@ def main():
     copy_dir(html_dir, 'css')
     copy_dir(html_dir, 'img')
     copy_dir(html_dir, 'fonts')
+    copy_dir(html_dir, 'data')
 
     for fname in files:
         if not fname[0] == '_':
