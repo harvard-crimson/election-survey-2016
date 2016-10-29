@@ -7,7 +7,11 @@
         <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Crimson|Colaborate" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/css/style.css">
 
-        {% block js %}{% endblock %}
+        {% block js %}
+        <script src="/js/lib/highcharts.js"></script>
+        <script src="/js/lib/highcharts.js"></script>
+        <script src="/js/lib/heatmap.js"></script>
+        {% endblock %}
     </head>
 <body>
 {% include 'jinja2/_header.html.jinja2' %}
