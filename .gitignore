@@ -1,2 +1,2 @@
-_site/
-compiled_html/
+_site/*
+compiled_html/*
