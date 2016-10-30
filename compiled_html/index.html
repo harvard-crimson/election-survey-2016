@@ -8,6 +8,12 @@
         <link rel="stylesheet" href="/css/style.css">
 
         
+   <script src="/js/lib/jquery-3.1.1.min.js"></script>
+        <script src="/js/lib/highcharts.js"></script>
+        <script src="/js/lib/heatmap.js"></script>
+<script src="/js/index.js"></script>
+
+
     </head>
 <body>
 <header class="site-header">
@@ -39,7 +45,7 @@
                 </div>
             </div>
             <div class="col-two-2">
-                <div class="section-cf-media">
+                <!-- <div class="section-cf-media">
                     <a href="election2016/"><img src="/img/placeholder.jpg">
                     <div class="media-description">
                         <div class="caption">A description of the image. Maybe alsoo photo
@@ -52,11 +58,28 @@
                 </div>
                 <div class="byline">Pradeep Niroula</div>
                 <div class="article-description">A survey of Harvard students show a very blue school.</div>
+                </div>-->
+                <div class="col-left-graph">
+                    <div class="col-graph">
+                        <div class="graph-title">Election 2016</div>
+                    <div id="vote-spectrum">
+                    </div>
+                    <div class="graph-comment">
+                        About 87 percent of respondents say they would vote for Hillary Clinton.
+                    </div>
+                </div>
+                <div class="col-graph">
+                    <div class="graph-title">Political Beliefs</div>
+                    <div id="politics-spectrum">
+                    </div>
+                    <div class="graph-comment">
+                        About 87 percent of respondents say they would vote for Hillary Clinton.
+                    </div>
                 </div>
             </div>
             <div class="clearfix"></div>
         </div>
-        <div class="section">
+        <!-- <div class="section">
             <div class="section-item">
                 <div class="section-image-right">
                     <div class="section-image-right-media">
@@ -83,7 +106,7 @@
                     <a class="quote-article-link">Read more</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
 </body>
