@@ -16,6 +16,7 @@ $(function () {
                 plotShadow: false,
                 type: 'pie'
             },
+
              colors:  ["#6F8AB7", "#C78283","#E1EA78","#75CC79"],
             title: {
                 text: 'The Harvard Crimson Election Survey Results'
@@ -74,6 +75,7 @@ $(function () {
         },
         yAxis: {
             min: 0,
+            max: 100,
             title: {
                 text: 'Trustworthiness (%)'
             }
@@ -125,6 +127,7 @@ $(function () {
         },
         yAxis: {
             min: 0,
+            max: 100,
             title: {
                 text: 'Rating (%)'
             }
@@ -179,6 +182,7 @@ $(function () {
         },
         yAxis: {
             min: 0,
+            max: 100,
             title: {
                 text: 'Rating (%)'
             }
@@ -235,6 +239,7 @@ $(function () {
         },
         yAxis: {
             min: 0,
+            max: 100,
             title: {
                 text: 'Rating (%)'
             }
@@ -283,6 +288,7 @@ $(function () {
         },
         yAxis: {
             min: 0,
+            max: 100,
             title: {
                 text: 'Less Likely to Vote for her (%)'
             }
@@ -318,6 +324,7 @@ $(function () {
         },
         yAxis: {
             min: 0,
+            max: 100,
             title: {
                 text: 'Less Likely to Vote for him (%)'
             }

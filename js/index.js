@@ -48,6 +48,7 @@ $(function () {
       enabled:true
       },
       tooltip: {
+        style: {fontFamily: 'Georgia'},
         animation: false,
         headerFormat: ' ',
         pointFormat: "<b>{series.name}</b>: {point.y}%",

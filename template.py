@@ -23,6 +23,7 @@ def main():
         # shutil.rmtree(html_dir)
         os.makedirs(html_dir)
     copy_dir(html_dir, 'css')
+    copy_dir(html_dir, 'js')
     copy_dir(html_dir, 'img')
     copy_dir(html_dir, 'fonts')
     copy_dir(html_dir, 'data')
