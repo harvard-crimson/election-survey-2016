@@ -76,6 +76,7 @@ $(function () {
         yAxis: {
             min: 0,
             max: 100,
+            softMax: 100,
             title: {
                 text: 'Trustworthiness (%)'
             }
@@ -128,6 +129,7 @@ $(function () {
         yAxis: {
             min: 0,
             max: 100,
+            softMax: 100,
             title: {
                 text: 'Rating (%)'
             }
@@ -183,6 +185,7 @@ $(function () {
         yAxis: {
             min: 0,
             max: 100,
+            softMax: 100,
             title: {
                 text: 'Rating (%)'
             }
@@ -240,6 +243,7 @@ $(function () {
         yAxis: {
             min: 0,
             max: 100,
+            softMax: 100,
             title: {
                 text: 'Rating (%)'
             }
@@ -272,7 +276,7 @@ $(function () {
     });
 });
 
-		
+
 // Bar Chart: Hillary's Controversies
 $(function () {
     $('#hillary-controversies').highcharts({
@@ -289,6 +293,7 @@ $(function () {
         yAxis: {
             min: 0,
             max: 100,
+            softMax: 100,
             title: {
                 text: 'Less Likely to Vote for her (%)'
             }
@@ -325,6 +330,7 @@ $(function () {
         yAxis: {
             min: 0,
             max: 100,
+            softMax: 100,
             title: {
                 text: 'Less Likely to Vote for him (%)'
             }
