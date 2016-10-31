@@ -1,22 +1,27 @@
 // Pie Chart: Total votes for candidates
 
+// Four way color function  colors:  ["#6F8AB7", "#C78283","#E1EA78","#75CC79"]
+// All respondents: colors: colors: ["#CACACA","#6F8AB7","#951B25"],
+// [ "#6F8AB7","#A5C3E1", "#C7C7C7", "#C78283","#951B25"]
+
 $(function () {
 
     $(document).ready(function () {
 
         // Build the chart
         $('#chart-clinton-trump-vote').highcharts({
-            chart: {
+            credits : {enabled:false},  chart:{
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
                 plotShadow: false,
                 type: 'pie'
             },
+             colors:  ["#6F8AB7", "#C78283","#E1EA78","#75CC79"],
             title: {
                 text: 'The Harvard Crimson Election Survey Results'
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                pointFormat: ' <b>{point.percentage:.1f}%</b>'
             },
             plotOptions: {
                 pie: {
@@ -52,12 +57,14 @@ $(function () {
 // Bar Chart: Trustworthiness
 $(function () {
     $('#chart-trustworthiness').highcharts({
-        chart: {
+        credits : {enabled:false},  chart:{
             type: 'column'
         },
+
         title: {
             text: 'Candidate Trustworthiness'
         },
+        colors: ["#CACACA","#6F8AB7","#951B25"],
         xAxis: {
             categories: [
                 'Hillary Clinton',
@@ -72,12 +79,7 @@ $(function () {
             }
         },
         tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+            enabled: false
         },
         plotOptions: {
             column: {
@@ -86,7 +88,7 @@ $(function () {
             }
         },
         series: [{
-            name: 'All Respondants',
+            name: 'All respondents',
             data: [48,5.1]
 
         }, {
@@ -104,12 +106,13 @@ $(function () {
 // Bar Charts: Favorability
 $(function () {
     $('#chart-favorability').highcharts({
-        chart: {
+        credits : {enabled:false},  chart:{
             type: 'column'
         },
         title: {
             text: 'Candidate Favorability'
         },
+        colors: ["#6F8AB7","#951B25","#CACACA"],
         xAxis: {
             categories: [
             	'Barack Obama',
@@ -126,13 +129,8 @@ $(function () {
                 text: 'Rating (%)'
             }
         },
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+       tooltip: {
+            enabled: false
         },
         plotOptions: {
             column: {
@@ -160,12 +158,13 @@ $(function () {
 // Bar Charts: Hillary Stances
 $(function () {
     $('#hillary-stances').highcharts({
-        chart: {
+        credits : {enabled:false},  chart:{
             type: 'column'
         },
         title: {
             text: 'Favorability of Hillary Clinton\'s Policy Stances'
         },
+        colors: ["#6F8AB7","#951B25","#CACACA","#323232"],
         xAxis: {
             categories: [
             	'Immigration in the US',
@@ -185,12 +184,7 @@ $(function () {
             }
         },
         tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+            enabled: false
         },
         plotOptions: {
             column: {
@@ -220,12 +214,13 @@ $(function () {
 // Bar Charts: Trump Stances
 $(function () {
     $('#trump-stances').highcharts({
-        chart: {
+        credits : {enabled:false},  chart:{
             type: 'column'
         },
         title: {
             text: 'Favorability of Donald Trump\'s Policy Stances'
         },
+        colors: ["#6F8AB7","#951B25","#CACACA","#323232"],
         xAxis: {
             categories: [
             	'Immigration in the US',
@@ -245,12 +240,7 @@ $(function () {
             }
         },
         tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+            enabled: false
         },
         plotOptions: {
             column: {
@@ -281,9 +271,10 @@ $(function () {
 // Bar Chart: Hillary's Controversies
 $(function () {
     $('#hillary-controversies').highcharts({
-        chart: {
+        credits : {enabled:false},  chart:{
             type: 'column'
         },
+       colors: ["#CACACA","#6F8AB7","#951B25"],
         title: {
             text: 'How Clinton\'s Controversies Affected the Vote'
         },
@@ -297,7 +288,7 @@ $(function () {
             }
         },
         series: [{
-            name: 'All Respondants',
+            name: 'All respondents',
             data: [49,34,38]
         }, {
             name: 'Clinton Supporters',
@@ -312,9 +303,13 @@ $(function () {
 // Bar Chart: Trump's Controversies
 $(function () {
     $('#trump-controversies').highcharts({
-        chart: {
+        credits : {enabled:false},  chart:{
             type: 'column'
         },
+        tooltip: {
+            enabled: false
+        },
+        colors: ["#CACACA","#6F8AB7","#951B25"],
         title: {
             text: 'How Trump\'s Controversies Affected the Vote'
         },
@@ -328,7 +323,7 @@ $(function () {
             }
         },
         series: [{
-            name: 'All Respondants',
+            name: 'All respondents',
             data: [95,83,95]
         }, {
             name: 'Clinton Supporters',

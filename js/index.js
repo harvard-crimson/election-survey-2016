@@ -9,7 +9,7 @@ $(function () {
         },
         type: "column"
       },
-      colors: ["#4D9FDB", "#FF7571", "#8CE8A0", "#E0D681"].reverse(),
+      colors:  ["#6F8AB7", "#C78283","#E1EA78","#75CC79"].reverse(),
       credits: {
         enabled: false
       },
@@ -20,9 +20,6 @@ $(function () {
         },
         itemHoverStyle: {
           fontWeight: "normal"
-        },
-        itemStyle: {
-          fontWeight: "bold"
         }
       },
       series: [
@@ -98,7 +95,7 @@ $(function () {
         },
         type: "column"
       },
-      colors: ["#2412C4", "#3F9EDB", "#C7C7C7", "#E38276","#E3463C"],
+      colors: [ "#6F8AB7","#A5C3E1", "#C7C7C7", "#C78283","#951B25"].reverse(),
       credits: {
         enabled: false
       },
@@ -131,7 +128,7 @@ $(function () {
           name: "Very Conservative",
           data: [2.56]
         }
-      ],
+      ].reverse(),
       title: {
         text: null
       },

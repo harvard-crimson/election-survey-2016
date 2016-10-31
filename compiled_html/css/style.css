@@ -21,7 +21,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .article-title, .article-title a{
-    font-size: 30px;
+    padding-top: 15px;
+    font-size: 28px;
     text-decoration: none;
     color: #000;
     width: 100%;
@@ -31,14 +32,42 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 5px;
 }
 
+.article-description{
+    line-height: 16px;
+    margin-top:15px;
+    font-size: 16px;
+}
 
-.byline{
+.byline, .byline a{
     clear: left;
-    font-family: "Open Sans";
+    font-family: "Colaborate Light";
     color: #777;
     text-transform: uppercase;
     font-size: 12px;
     margin: 0;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.byline-date-block, .byline-dateblock a{
+    clear: left;
+    font-family: "Colaborate Light";
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.byline-date-block .date{
+    clear: left;
+    font-family: "Colaborate Light";
+    color: #ba0600;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0;
+    text-decoration: none;
     padding-bottom: 5px;
 }
 
@@ -59,8 +88,19 @@ h1, h2, h3, h4, h5, h6 {
 .content-wrapper {
     width: 60%;
     margin: 0 auto;
-    color: #555;
+    color: #333;
 }
+
+.content{
+    line-height: 1.5em;
+    padding-bottom: 50px;
+}
+
+.content .article-title{
+    font-size: 35px;
+    line-height: 1.2em;
+}
+
 
 .section-wrapper {
     width: 80%;
@@ -73,16 +113,51 @@ header {
     left: 0;
     right: 0;
     background: rgba(187,6,0,0.95);
-    height: 55px;
+    background-image: url("/img/banner.jpg");
+    background-size: 100% 100%;
+    height: 75px;
     color: #fff;
 }
 
+.header-text{
+    width: 80%;
+    margin: 0 auto;
+}
+
 .header-logo{
-    padding-left:30px;
+    padding-left:15px;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
+
+.header-logo-left a{
+    padding-left:15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    width: 40%;
+}
+
+.header-logo-right a{
+    padding-right: 15px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    text-align:right;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 1.5em;
+    float:left;
+    vertical-align: bottom;
+    width: 55%;
+}
+
 
 .full-width {
     width: 100%;
@@ -115,7 +190,7 @@ header {
 }
 
 .col-graph{
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -150,8 +225,11 @@ header {
     width: 100%;
 }
 
-.graph-title{
+.graph-title, .graph-title a{
     font-size: 1.2em;
+    font: "Crimson", sans-serif;
+    color: #111;
+    text-decoration: none;
 }
 .graph-comment{
     width: 100%;
@@ -184,10 +262,12 @@ header {
     text-decoration: none;
 }
 
-.section-cf-media .media-description .caption {
+.section-cf-media .media-description .caption,.section-cf-media .media-description .caption .byline  {
     padding-bottom: 2px;
     padding-left: 5px;
     color: #fff;
+    font-family: "Lato";
+    font-weight: 300;
 }
 
 .section-cf-media .media-description {
@@ -202,7 +282,7 @@ header {
     z-index: 6;
     font-size: 0.8em;
     padding-top: 3px;
-    height: 25px;
+    height: 40px;
     overflow: hidden;
 }
 
@@ -215,7 +295,14 @@ header {
     padding-bottom: 2px;
     padding-left: 5px;
     color: #fff;
+    font-family: "Lato";
+    font-weight: 300;
 }
+
+.section-image-right-media .media-description .byline {
+    color: #fff;
+}
+
 
 .section-image-right-media .media-description {
     text-align: left;
@@ -251,7 +338,20 @@ header {
     font-size: 18px;
 }
 
+.back, .back a{
+    padding-top: 30px;
+    font-size: 18px;
+    font-family: "Lato";
+    font-weight: 400;
+    color: #222;
+    text-decoration: none;
+}
+
 @media (max-width: 960px) {
+    .header-text{
+    width: 100%;
+    }
+
      .section-wrapper{
         width: 80%;
     }
@@ -266,14 +366,42 @@ header {
 }
 
 
+
+
 @media (max-width: 600px) {
+    header{
+        height: 100px;
+    }
+    .header-text{
+    width: 100%;
+    }
+    .header-logo-right{
+        padding-left: 0px;
+        padding-right:0px;
+    width: 100%;
+    float: none;
+    padding-bottom: 0px;
+    text-align: center;
+    }
+
+    .header-logo-left{
+    width: 100%;
+    float: none;
+     padding-left: 0px;
+        padding-right:0px;
+    text-align: center;
+    padding-bottom: 0px;
+    }
+
     .section-wrapper{
         width: 100%;
+        margin: 0 auto;
     }
 
     .col-two-1 {
         width: 80%;
         float: none;
+        margin: 0 auto;
     }
 
     .col-two-2 {
