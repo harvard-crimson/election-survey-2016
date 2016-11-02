@@ -1,11 +1,12 @@
 <header class="site-header">
-<div class="header-text">
-<div class="header-logo-left">
-  <a href="http://thecrimson.com">The Harvard Crimson</a>
-</div>
-<div class="header-logo-right">
-  <a href="#">ELECTION 2016</a>
-</div>
-<div class="clearfix"></div>
-</div>
+    <div class="wrapper">
+        <a class="header-logo" href="http://www.thecrimson.com/">
+            <img src="img/logo.png" height="18" width="215" />
+        </a>
+        <ul class="header-nav">
+            <a href="">          <li{% if 'index'     in filename %} class="active"{% endif %}>Trump v. Clinton</li></a>
+            <a href="compiled_html/politics/">   <li{% if 'politics'    in filename %} class="active"{% endif %}>Political Preferences</li></a>
+        </ul>
+        <div class="header-logo-right">ELECTION 2016</div>
+    </div>
 </header>
